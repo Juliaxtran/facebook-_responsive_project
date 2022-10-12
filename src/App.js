@@ -1,15 +1,19 @@
 
 import './App.css';
 import * as React from 'react';
-import Button from '@mui/material/Button';
+import Sidebar from './components/Sidebar';
+import Feed from './components/Feed';
+import Rightbar from './components/Rightbar';
 
 
 function App() {
+
+
   return (
     <div className="App">
-     <Button variant="text">Text</Button>
-      <Button variant="contained">Contained</Button>
-      <Button variant="outlined">Outlined</Button>
+      <Sidebar />
+      <Feed />
+      <Rightbar />
     </div>
   );
 }
