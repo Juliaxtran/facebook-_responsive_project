@@ -50,7 +50,7 @@ function Add() {
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
       >
-        <Box width={400} height={280} bgcolor='white' padding={3} borderRadius={5}>
+        <Box width={400} height={280} padding={3} borderRadius={5} bgcolor={'background.default'} color={'text.primary'}>
           <Typography variant='h6' color='gray' textAlign="center">Add Post</Typography>
           <UserBox>
             <Avatar src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />

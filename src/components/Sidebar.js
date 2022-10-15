@@ -14,11 +14,11 @@ import ModeNightIcon from '@mui/icons-material/ModeNight';
 
 
 
-const Sidebar = () => {
-   const [checked, setChecked] = React.useState(true);
+const Sidebar = ({mode, setMode}) => {
+
 
    const handleChange = (event) => {
-     setChecked(event.target.checked);
+     setMode(mode === 'light' ? 'dark' : 'light');
    };
    return (
       <Box flex={1} p={2} sx={{ display: { xs: "none", sm: "block" } }}>
@@ -86,9 +86,7 @@ const Sidebar = () => {
                    <ModeNightIcon/>
                   </ListItemIcon>
                   <Switch
-                  checked={checked}
-                  onChange={handleChange}
-                  inputProps={{'aria-label': 'controlled'}} />
+                  onChange={handleChange} />
                </ListItemButton>
             </ListItem>
          </List>
