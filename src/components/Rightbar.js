@@ -38,7 +38,7 @@ const Rightbar = () => {
               alt="Waves"/>
           </ImageListItem>
         </ImageList>
-        <Typography variant='h6' fontWeight={200} mt={2} mb={2}>
+        <Typography variant='h6' fontWeight={200} mt={2}>
           Latest Conversations
         </Typography>
         <List sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}>
