@@ -1,7 +1,11 @@
-import React from 'react'
-import { Tooltip, IconButton, Modal, Box, Typography , styled, Avatar} from '@mui/material'
-import Fab from '@mui/material/Fab'
-import AddIcon from '@mui/icons-material/Add'
+import React from 'react';
+import { Tooltip, IconButton, Modal, Box, Typography , styled, Avatar, TextField, Stack} from '@mui/material';
+import Fab from '@mui/material/Fab';
+import AddIcon from '@mui/icons-material/Add';
+import EmojiEmotionsIcon from '@mui/icons-material/EmojiEmotions';
+import ImageIcon from '@mui/icons-material/Image';
+import VideoCameraFrontIcon from '@mui/icons-material/VideoCameraFront';
+import PersonAddIcon from '@mui/icons-material/PersonAdd';
 
 
 function Add() {
@@ -51,6 +55,20 @@ function Add() {
           <Avatar src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
           <Typography variant='span' textAlign="center" >Jessica Pham</Typography>
          </UserBox>
+         <TextField
+          sx={{width:'100%'}}
+          id="standard-multiline-static"
+          multiline
+          rows={3}
+          placeholder="What's on your mind?"
+          variant="standard"
+        />
+        <Stack direction='row' gap={1} mt={2} mb={3}>
+          <EmojiEmotionsIcon color='primary'/>
+          <ImageIcon color='secondary'/>
+          <VideoCameraFrontIcon color='success'/>
+          <PersonAddIcon color='error'/>
+        </Stack>
         </Box>
       </StyledModal>
     </>
