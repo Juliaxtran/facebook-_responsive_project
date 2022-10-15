@@ -29,7 +29,7 @@ const Rightbar = () => {
           </ImageListItem>
           <ImageListItem>
             <img
-              srcSet="https://images.pexels.com/photos/9890370/pexels-photo-9890370.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=252&fit=crop&h=408"
+              srcSet="https://images.pexels.com/photos/2609925/pexels-photo-2609925.jpeg?auto=compress&cs=tinysrgb&w=300"
               alt="Waves"/>
           </ImageListItem>
           <ImageListItem>
