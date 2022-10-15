@@ -8,18 +8,22 @@ import CardActions from '@mui/material/CardActions';
 import Avatar from '@mui/material/Avatar';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
-import { red } from '@mui/material/colors';
-import FavoriteIcon from '@mui/icons-material/Favorite';
 import ShareIcon from '@mui/icons-material/Share';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
+import Checkbox from '@mui/material/Checkbox';
+import FavoriteBorder from '@mui/icons-material/FavoriteBorder';
+import Favorite from '@mui/icons-material/Favorite';
+
+
 
 const Feed = () => {
+
   return (
-    <Box bgcolor='green' flex={4} p={2}>
-      <Card sx={{ maxWidth: 345 }}>
+    <Box  flex={4} p={2}>
+      <Card>
         <CardHeader
           avatar={
-            <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
+            <Avatar sx={{ bgcolor: 'red' }} aria-label="name">
               R
             </Avatar>
           }
@@ -33,20 +37,19 @@ const Feed = () => {
         />
         <CardMedia
           component="img"
-          height="194"
+          height="20%"
           image="https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-          alt="Paella dish"
+          alt="dog"
         />
         <CardContent>
           <Typography variant="body2" color="text.secondary">
-            This impressive paella is a perfect party dish and a fun meal to cook
-            together with your guests. Add 1 cup of frozen peas along with the mussels,
-            if you like.
+           My two very cute puppies, Rebecca and Jones.
           </Typography>
         </CardContent>
         <CardActions disableSpacing>
           <IconButton aria-label="add to favorites">
-            <FavoriteIcon />
+            {/* Change from one icon to another  */}
+          <Checkbox icon={<FavoriteBorder />} checkedIcon={<Favorite  sx={{color:' red'}}/>} />
           </IconButton>
           <IconButton aria-label="share">
             <ShareIcon />
